@@ -42,7 +42,7 @@ Also set your desired output path where the downloads will be saved:
 
 ---
 
-Usage
+## Usage
 
 Run the script:
 
