@@ -7,6 +7,8 @@ from pyppeteer import launch
 
 CHROMIUM_PATH = '/data/data/com.termux/files/usr/bin/chromium-browser'
 BASE_URL = 'https://mangaxyz.com'
+# Change this to your desired download directory
+OUTPUT_PATH = '/storage/emulated/0/manga_downloads'
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36',
@@ -184,8 +186,8 @@ async def main():
             else:
                 chosen.add(int(part))
 
-    base_dir = os.path.join(os.getcwd(), sanitize_filename(manga_title))
-    os.makedirs(base_dir, exist_ok=True)
+    base_dir = os.path.join(OUTPUT_PATH, sanitize_filename(manga_title))
+os.makedirs(base_dir, exist_ok=True)
 
     for i in sorted(chosen):
         ch = chapters[i - 1]
