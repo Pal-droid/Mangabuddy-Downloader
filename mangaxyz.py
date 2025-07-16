@@ -187,7 +187,7 @@ async def main():
                 chosen.add(int(part))
 
     base_dir = os.path.join(OUTPUT_PATH, sanitize_filename(manga_title))
-os.makedirs(base_dir, exist_ok=True)
+    os.makedirs(base_dir, exist_ok=True)
 
     for i in sorted(chosen):
         ch = chapters[i - 1]
