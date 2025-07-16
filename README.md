@@ -16,7 +16,7 @@ A command-line tool to search, view, and download manga chapters from [Mangaxyz]
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/mangaxyz-downloader.git
+git clone https://github.com/pal-droid/mangaxyz-downloader
 cd mangaxyz-downloader
 ```
 
