@@ -32,13 +32,13 @@ If you're using Termux, install Chromium with:
 
 Then set the path in the code:
 
-CHROMIUM_PATH = '/path/to/your/chromium'
+`CHROMIUM_PATH = '/path/to/your/chromium'`
 
 For Linux/Windows/Mac users, set the appropriate path to your Chromium or Chrome executable.
 
 Also set your desired output path where the downloads will be saved:
 
-OUTPUT_PATH = '/path/to/your/desired/output/folder'
+`OUTPUT_PATH = '/path/to/your/desired/output/folder'`
 
 ---
 
