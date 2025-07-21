@@ -1,4 +1,4 @@
-# Mangaxyz Downloader
+# Mangabuddy Downloader
 
 A command-line tool to search, view, and download manga chapters from [Mangabuddy](https://mangabuddy.com).
 
