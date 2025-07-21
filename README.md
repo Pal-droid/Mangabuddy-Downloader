@@ -2,7 +2,7 @@
 
 A command-line tool to search, view, and download manga chapters from [Mangabuddy](https://mangabuddy.com).
 
-> Otherwise known as [Mangaxyz](mangaxyz.com)
+> Otherwise known as [Mangaxyz](mangaxyz.com) - *Site also has a bunch of other mirrors.*
 
 ## Features
 
