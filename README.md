@@ -92,14 +92,14 @@ cd Mangabuddy-Downloader
 
 2. Install Dependencies
 
-```
+```bash
 python3 -m venv MangaBuddy-Downloader-venv
-MangaBuddy-Downloader-venv\bin\pip install -r requirements.txt
+MangaBuddy-Downloader-venv/bin/pip install -r requirements.txt
 ```
 3. Install Chrome
 
 Install Chrome so its dependencies will be installed as well.
-```
+```bash
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
 sudo apt update 
@@ -115,4 +115,4 @@ Also set your desired output path where the downloads will be saved:
 ## Usage
 
 Run the script:
-`MangaBuddy-Downloader-venv\bin\python3 mangaxyz.py`
+`MangaBuddy-Downloader-venv/bin/python3 mangaxyz.py`
