@@ -18,13 +18,13 @@ A command-line tool to search, view, and download manga chapters from [Mangabudd
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/pal-droid/mangaxyz-downloader
-cd mangaxyz-downloader
+git clone https://github.com/pal-droid/Mangabuddy-Downloader
+cd Mangabuddy-Downloader
 ```
 
 2. Install Dependencies
 
-```pip install -r requirements.txt```
+`pip install -r requirements.txt`
 
 3. Install Chromium (Required for Pyppeteer)
 
@@ -39,7 +39,6 @@ Then set the path in the code:
 For Linux/Windows/Mac users, set the appropriate path to your Chromium or Chrome executable.
 
 Also set your desired output path where the downloads will be saved:
-
 `OUTPUT_PATH = '/path/to/your/desired/output/folder'`
 
 ---
@@ -83,3 +82,37 @@ Downloading chapter Alya Sometimes Hides Her Feelings in Russian - Chapter 61 ..
 
 ...more downloads here...
 ```
+
+## Installation and Usage in Ubuntu/Debian
+
+```bash
+git clone https://github.com/pal-droid/Mangabuddy-Downloader
+cd Mangabuddy-Downloader
+```
+
+2. Install Dependencies
+
+```bash
+python3 -m venv MangaBuddy-Downloader-venv
+MangaBuddy-Downloader-venv/bin/pip install -r requirements.txt
+```
+3. Install Chrome
+
+Install Chrome so its dependencies will be installed as well.
+```bash
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt update 
+sudo apt install google-chrome-stable
+```
+Edit the code with the following changes:
+`BASE_URL = 'https://mangabuddy.com'`
+`CHROMIUM_PATH = '/usr/bin/google-chrome'`
+
+Also set your desired output path where the downloads will be saved:
+`OUTPUT_PATH = '/path/to/your/desired/output/folder'`
+
+## Usage
+
+Run the script:
+`MangaBuddy-Downloader-venv/bin/python3 mangaxyz.py`
