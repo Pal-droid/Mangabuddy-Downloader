@@ -6,8 +6,9 @@ import httpx
 from yaspin import yaspin
 from yaspin.spinners import Spinners
 
+# ✅ Correct repo URLs
 REPO_URL = "https://github.com/Pal-droid/Mangabuddy-Downloader"
-RAW_MANIFEST_URL = f"{REPO_URL}/raw/main/manifest.json"
+RAW_MANIFEST_URL = "https://raw.githubusercontent.com/Pal-droid/Mangabuddy-Downloader/main/manifest.json"
 LOCAL_MANIFEST_PATH = "manifest.json"
 
 
@@ -20,7 +21,7 @@ def load_local_manifest():
 
 
 async def fetch_remote_manifest():
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(follow_redirects=True, timeout=10) as client:
         resp = await client.get(RAW_MANIFEST_URL)
         resp.raise_for_status()
         return resp.json()
@@ -31,7 +32,7 @@ async def main():
     if not local_manifest:
         return
 
-    with yaspin(Spinners.dots, text="Checking for updates...") as spinner:
+    with yaspin(Spinners.dots, text="💥 Checking for updates...") as spinner:
         try:
             remote_manifest = await fetch_remote_manifest()
         except Exception as e:
@@ -49,7 +50,7 @@ async def main():
 
         if local_version == remote_version:
             spinner.ok("✅")
-            print(f"You’re up to date (v{local_version})")
+            print(f"You're up to date (v{local_version})")
             return
 
         spinner.text = f"New version available: {remote_version} (local v{local_version})"
@@ -63,7 +64,7 @@ async def main():
             subprocess.run(["rm", "-rf", repo_name], check=False)
             subprocess.run(["git", "clone", REPO_URL], check=True)
         else:
-            subprocess.run(["git", "pull"], check=True)
+            subprocess.run(["git", "pull", "origin", "main"], check=True)
 
         print("✅ Update complete! Restart your tool to use the latest version.")
 
