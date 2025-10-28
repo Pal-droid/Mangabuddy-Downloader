@@ -6,7 +6,6 @@ import httpx
 from yaspin import yaspin
 from yaspin.spinners import Spinners
 
-# ✅ Correct repo URLs
 REPO_URL = "https://github.com/Pal-droid/Mangabuddy-Downloader"
 RAW_MANIFEST_URL = "https://raw.githubusercontent.com/Pal-droid/Mangabuddy-Downloader/main/manifest.json"
 LOCAL_MANIFEST_PATH = "manifest.json"
