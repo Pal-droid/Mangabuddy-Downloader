@@ -1,0 +1,21 @@
+{
+  "name": "Mangabuddy-Downloader",
+  "version": "1.3.0",
+  "description": "Python CLI tool to download manga chapters from Mangabuddy mirrors with retry, debug logs, and auto mirror switching.",
+  "author": "Pal-droid",
+  "license": "MIT",
+  "repository": "https://github.com/Pal-droid/Mangabuddy-Downloader",
+  "last_updated": "2025-10-28",
+  "supported_mirrors": [
+    { "label": "mangabuddy.com", "value": "https://mangabuddy.com" },
+    { "label": "mangaforest.me", "value": "https://mangaforest.me" },
+    { "label": "mangacute.com", "value": "https://mangacute.com" },
+    { "label": "mangaxyz.com", "value": "https://mangaxyz.com" },
+    { "label": "mangapuma.com", "value": "https://mangapuma.com" },
+    { "label": "mangamirror.com", "value": "https://mangamirror.com" },
+    { "label": "truemanga.com", "value": "https://truemanga.com" },
+    { "label": "mangafab.com", "value": "https://mangafab.com" },
+    { "label": "manhwatube.com", "value": "https://manhwatube.com" }
+  ],
+  "entry_point": "mangaxyz.py"
+}

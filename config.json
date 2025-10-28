@@ -1,0 +1,8 @@
+{
+  "output_path": "/storage/emulated/0/manga_downloads",
+  "debug": false,
+  "mirror_domain": "https://mangabuddy.com",
+  "max_retries": 3,
+  "timeout_seconds": 15,
+  "auto_switch_mirror": true
+}
