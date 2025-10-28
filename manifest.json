@@ -1,6 +1,6 @@
 {
   "name": "Mangabuddy-Downloader",
-  "version": "1.3.0",
+  "version": "1.1.0",
   "description": "Python CLI tool to download manga chapters from Mangabuddy mirrors with retry, debug logs, and auto mirror switching.",
   "author": "Pal-droid",
   "license": "MIT",
