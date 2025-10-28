@@ -1,5 +1,13 @@
 # Mangabuddy Downloader
 
+### Search
+
+<img src="https://raw.githubusercontent.com/Pal-droid/Mangabuddy-Downloader/main/images/search.gif" alt="preview" width="80%"/>
+
+### Download
+
+<img src="https://raw.githubusercontent.com/Pal-droid/Mangabuddy-Downloader/main/images/downloading.gif" alt="preview" width="80%"/>
+
 A command-line tool to search, view, and download manga chapters from [Mangabuddy](https://mangabuddy.com).
 
 > Otherwise known as [Mangaxyz](mangaxyz.com) - *Site also has a bunch of other mirrors.*
@@ -119,30 +127,6 @@ Run the main script:
 
 ```bash
 python mangaxyz.py
-```
-
-### Example output:
-
-```
-Mangabuddy-Downloader v1.3.0
-Python CLI tool to download manga chapters from Mangabuddy mirrors with retry, debug logs, and
-auto mirror switching.
-
-Enter manga name: bluelock
-1. Blue Lock
-
-Select manga number: 1
-1. Notice. : ANIME NEWS!!
-2. Chapter 1: Dream
-3. Chapter 2: Moving In
-4. Chapter 3: Monster
-5. Chapter 4: Now
-
-Enter chapters to download (e.g. 1,3,5-7 or all): 1
-
-⬇ Downloading Notice. : ANIME NEWS!!
-  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Downloading... 0:00:00
-✔ Chapter complete: Notice. : ANIME NEWS!!```
 ```
 
 ---
