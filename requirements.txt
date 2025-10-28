@@ -2,3 +2,4 @@ beautifulsoup4
 httpx
 colorama
 tqdm
+rich
