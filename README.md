@@ -143,6 +143,7 @@ Enter chapters to download (e.g. 1,3,5-7 or all): 1
 ⬇ Downloading Notice. : ANIME NEWS!!
   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Downloading... 0:00:00
 ✔ Chapter complete: Notice. : ANIME NEWS!!```
+```
 
 ---
 
