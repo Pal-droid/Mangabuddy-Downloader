@@ -139,7 +139,11 @@ class Provider:
 
     async def find_chapter_pages(self, chapter_id: str):
         async with httpx.AsyncClient(timeout=TIMEOUT) as client:
-            html_page = await self.fetch(client, f"{self.api}/{chapter_id}")
+            try:
+                html_page = await self.fetch(client, f"{self.api}/{chapter_id}")
+            except Exception as e:
+                console.print(f"[red]findChapterPages error:[/red] {e}")
+                return []
         img_var = re.search(r"var\s+chapImages\s*=\s*'([^']+)'", html_page)
         if not img_var:
             debug(f"No chapImages found for {chapter_id}")
