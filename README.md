@@ -40,7 +40,7 @@ cd Mangabuddy-Downloader
 ### 2. Install Dependencies
 
 ```bash
-pip install -r requirements.txt
+make install
 ```
 
 ### 3. Configure Settings
@@ -73,7 +73,7 @@ Edit the `config.json` file to set your paths and preferences:
 Run the main script:
 
 ```bash
-python mangaxyz.py
+make run
 ```
 
 ---
@@ -83,7 +83,7 @@ python mangaxyz.py
 Check for updates and automatically pull the latest version:
 
 ```bash
-python update.py
+make update
 ```
 
 ---
