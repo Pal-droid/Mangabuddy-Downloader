@@ -3,3 +3,4 @@ httpx
 colorama
 tqdm
 rich
+yaspin
