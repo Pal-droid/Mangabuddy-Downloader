@@ -56,7 +56,7 @@ Edit the `config.json` file to set your paths and preferences:
 ```
 
 **Available mirrors:**
-- mangabuddy.com  
+- mangabuddy.com (Default)
 - mangaforest.me  
 - mangacute.com  
 - mangaxyz.com  
