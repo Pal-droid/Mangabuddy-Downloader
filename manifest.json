@@ -5,7 +5,7 @@
   "author": "Pal-droid",
   "license": "MIT",
   "repository": "https://github.com/Pal-droid/Mangabuddy-Downloader",
-  "last_updated": "2025-10-28",
+  "last_updated": "2025-12-18",
   "supported_mirrors": [
     { "label": "mangabuddy.com", "value": "https://mangabuddy.com" },
     { "label": "mangaforest.me", "value": "https://mangaforest.me" },
